@@ -1,9 +1,10 @@
 {
   "name": "elm-project-inspect",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Elm project inspection",
   "main": "dist/src/index.js",
   "scripts": {
+    "prepublish": "npm run build",
     "prebuild": "rimraf 'src/**/*.js' 'src/**/*.map' 'test/**/*.js' 'test/**/*.map' dist",
     "build-ts": "tsc",
     "build": "npm run build-ts",
